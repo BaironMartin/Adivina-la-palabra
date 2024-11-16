@@ -1,0 +1,332 @@
+* {
+    margin: 0px;
+
+}
+
+body {
+    background: linear-gradient(to right, rgb(138 51 207), rgb(195 79 228));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+
+    font-size: 8rem;
+    background: linear-gradient(to right, #f0f9ffa9, #a8c1ffa8);
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 4px;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.container {
+    min-width: 500px;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(10, 16, 32);
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+
+.container_box {
+    text-align: center;
+    align-items: center;
+
+}
+
+.container_box h2 {
+    background: linear-gradient(to right, rgb(132, 0, 255), rgb(255, 0, 242));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container_box P {
+    display: block;
+    margin: 20px;
+    height: 80px;
+    border: none;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #4a5567;
+    color: #97a4b7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container_box_help {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.intentos {
+    margin: 0 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: #bbb;
+}
+
+
+
+.errores {
+    margin: 0 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: #bbb;
+}
+
+.respuestas_box {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.respuestas_box input {
+    background-color: transparent;
+    width: 8%;
+    margin: 10px;
+    height: 50px;
+    border: 1.5px solid #4a5567;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.respuestas_box input:focus {
+    border: 1.5px solid #7a2489;
+}
+
+.container_box_button {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+
+.button {
+    margin: 0 20px;
+    padding: 0 20px;
+    min-width: 20%;
+    height: 30px;
+    width: 35%;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: none;
+    background-color: #c951e7;
+    color: white;
+    border-bottom: 2px solid #7a2489;
+    box-shadow: 0px 2px 4px #7a2489;
+    font-size: 1rem;
+
+}
+
+button:hover {
+    background-color: #c951e7bb;
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .container {
+    width: 350px;
+    min-width: unset;
+    padding: 10px;
+    display: grid;
+    place-items: center     
+
+    }
+
+    .container_box {
+        font-size: 10px;
+        width: 230px;
+    }
+
+    .container_box input {
+        height: 10px;
+        width: 80%;
+    }
+
+    .container_box_help {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 230px;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .intentos {
+
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .errores {
+
+        flex-wrap: wrap;
+        font-size: 12px;
+
+    }
+
+    .respuestas_box {
+        text-align: center;
+        margin: 10px;
+        width: 230px;
+
+    }
+
+    .respuestas_box input {
+
+        width: 8%;
+        margin: 2px;
+        height: 30px;
+        outline: none;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+    }
+
+    .container_box_button {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 230px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 5px 20px;
+        padding: 0 20px;
+        min-width: 20%;
+        height: 30px;
+        width: 80%;
+        letter-spacing: 3px;
+        font-size: 1rem;
+
+    }
+
+
+    }
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .container {
+        width: 250;
+        min-width: unset;
+        padding: 10px;
+        display: grid;
+    place-items: center     
+
+    }
+
+    .container_box {
+        font-size: 10px;
+        width: 230px;
+    }
+
+    .container_box input {
+        height: 10px;
+        width: 80%;
+    }
+
+    .container_box_help {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 230px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intentos {
+
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+
+    .errores {
+
+        flex-wrap: wrap;
+        font-size: 15px;
+
+    }
+
+    .respuestas_box {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 230px;
+
+    }
+
+    .respuestas_box input {
+
+        width: 8%;
+        margin: 2px;
+        height: 30px;
+        outline: none;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+    }
+
+    .container_box_button {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 230px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 5px 20px;
+        padding: 0 20px;
+        min-width: 20%;
+        height: 30px;
+        width: 80%;
+        letter-spacing: 3px;
+        font-size: 1rem;
+
+    }
+}

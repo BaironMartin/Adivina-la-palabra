@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Adivina la Palabra</title>
+</head>
+
+<body>
+    <h1>Adivina la Palabra</h1>
+    <section class="container">
+        <div class="container_box">
+            <h2>Mezcla De Palabras</h2>
+            <P id="scrambled-word" ></P>
+        </div>
+        <div class="container_box_help">
+            <div class="intentos">
+                <label for="">Intentos (<span id="tries">4</span>/5)</label>
+                
+            </div>
+            <div class="errores">
+                <label for="">Errores: <strong><span id="mistakes">a, e, w, t</span></strong></label>
+
+                </span>
+
+            </div>
+
+        </div>
+        <div class="respuestas_box" id="letters">
+        </div>
+        <div class="container_box_button">
+            <button class="button" onclick="resetGame()" >Reiniciar</button>
+            <button class="button"onclick="checkGuess()">Comprobar</button>
+            <button class="button" onclick="randomWord()">Aleatorio</button>
+        </div>
+    </section>
+</body>
+<script src="js/app.js"></script>
+
+</html>
